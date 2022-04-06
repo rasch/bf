@@ -1,0 +1,17 @@
+<body style=margin:0><script>b=document;
+['code','input','output'].map(r=>{
+b.body[a='appendChild'](i=b[n='createElement']('textarea'))
+i.id=i.placeholder=r,i.style.height=innerHeight/4,i.style.width='100%'})
+b.body[a](N=b[n]('input'));N.id=N[R='value']=N.type='submit',
+N.addEventListener('click',()=>{B=code[R],I=input[R],O=A=>output[R]+=A
+for($=Array(3e4),_=[],f=u=c=k=0;
+k<B[F='length'];
+C=B[U='charCodeAt'](k++)-44,
+u&&(u+=0|1/(48-C),C=3),
+K=$[f]=~~$[f]-~~(1/C),
+f+=0|1/(C-17),
+C||I[F]>c&&($[f]=I[U](c++)),
+C^2||O(String.fromCharCode(K)),
+C^47||(K?_.push(k):u++),
+C^49||(K?k=_[_[F]-1]:_.pop()));
+output.scrollTop=output.scrollHeight})</script>
