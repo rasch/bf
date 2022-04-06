@@ -1,0 +1,18 @@
+#!/bin/sh
+
+minify() {
+  echo "Minifying index.js -> index.min.js. Total bytes:"
+  tr -d '\n' < index.js | tee index.min.js | wc -c
+}
+
+default() {
+  help
+}
+
+help() {
+  echo "$0 <task> <args>"
+  echo "Tasks:"
+  sed -n 's/^\([a-z][a-z_]\+\)() {/\1/p' "$0" | cat -n
+}
+
+"${@:-default}"
