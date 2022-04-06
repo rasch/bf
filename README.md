@@ -26,9 +26,9 @@ Since `input` and `output` are dependent on the environment, they need
 to be implemented before running the interpreter. The scope chain is
 checked for the existence of three identifiers (`B`, `I` and `O`).
 
-- `B` string of brainfuck code to run
-- `I` string of input for the brainfuck code
-- `O` callback function to handle output. It is passed a single
+- `B`: string of brainfuck code to run
+- `I`: string of input for the brainfuck code
+- `O`: callback function to handle output. It is passed a single
   parameter containing the character to write.
 
 **Warning**: The following global variables are created:
